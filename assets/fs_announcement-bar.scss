@@ -1,0 +1,15 @@
+.fs-announcement-bar {
+    .fs-announcement-bar__inner {
+        height: 50px;
+        line-height: 50px;
+        font-size: 14px;
+        font-family: Helvetica, sans-serif;
+        text-align: center;
+        @media (max-width: 1043px) {}
+        @media (max-width: 767px) {
+            height: 35px;
+            line-height: 35px;
+            font-size: 11px;
+        }
+    }
+}

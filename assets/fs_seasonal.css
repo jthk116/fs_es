@@ -1,0 +1,19 @@
+.fs-seasonal {
+  margin-bottom: 60px;
+}
+.fs-seasonal .container {
+  display: flex;
+  position: relative;
+}
+.fs-seasonal .container .fs-seasonal__content {
+  position: absolute;
+  left: 20%;
+  top: 30%;
+  background: #FFFFFF;
+  z-index: 1;
+}
+.fs-seasonal .container .fs-seasonal__image {
+  margin-left: auto;
+  max-width: 930px;
+  width: 100%;
+}/*# sourceMappingURL=fs_seasonal.css.map */

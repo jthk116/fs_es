@@ -1,0 +1,40 @@
+{{ 'fs_announcement-bar.css' | asset_url | stylesheet_tag }}
+
+<div class="fs-announcement-bar__inner" style="background: {{ section.settings.ab_background_color }};">
+    <div style="color: {{ section.settings.ab_text_color }};">
+        {{ section.settings.ab_text }}
+    </div>
+</div>
+
+{% schema %}
+{
+    "name": "FS Announcement Bar",
+    "class": "fs-announcement-bar",
+    "settings": [
+        {
+            "type": "text",
+            "id": "ab_text",
+            "label": "Announcement Text",
+            "default": "FREE SHIPPING & RETURNS ON EVERY ORDER!"
+        },
+        {
+            "type": "url",
+            "id": "ab_url",
+            "label": "Announcement URL"
+        },
+        {
+            "type": "color",
+            "id": "ab_text_color",
+            "label": "Announcement Text Color",
+            "default": "#FFFFFF"
+        },
+        {
+            "type": "color",
+            "id": "ab_background_color",
+            "label": "Announcement Background Color",
+            "default": "#005BC4"
+        }
+    ],
+    "presets": [{ "name": "FS Announcement Bar"}]
+}
+{% endschema %}

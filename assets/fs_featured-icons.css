@@ -1,0 +1,36 @@
+.fs-featured-icons {
+  background: #FAFBFB;
+}
+.fs-featured-icons .container {
+  display: flex;
+  gap: 16px;
+  justify-content: space-between;
+  align-items: center;
+  height: 250px;
+  padding: 16px 170px;
+}
+@media (max-width: 767px) {
+  .fs-featured-icons .container {
+    flex-direction: column;
+    padding: 16px;
+    height: 500px;
+  }
+}
+.fs-featured-icons .container .fs-icon__content {
+  text-align: center;
+}
+.fs-featured-icons .container .fs-icon__content img {
+  height: 50px;
+}
+.fs-featured-icons .container .fs-icon__content p {
+  font-size: 20px;
+  font-family: Helvetica, sans-serif;
+  max-width: 140px;
+}
+@media (max-width: 767px) {
+  .fs-featured-icons .container .fs-icon__content p {
+    font-size: 16px;
+    max-width: 160px;
+    margin-top: 6px;
+  }
+}/*# sourceMappingURL=fs_featured-icons.css.map */

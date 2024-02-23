@@ -1,0 +1,22 @@
+<div class="fs-card">
+    <img src='{{ card.card_image | img_url: 'master' }}' class="fs-card__image">
+    <div class="fs-card__content">
+        <h3>{{ card.card_title }}</h3>
+        <p>{{ card.card_subtitle }}</p>
+        <div class="fs-card__links">
+            {% if type == 'card_1' %}
+                {% if card.link_text1 != null %}
+                    <a href="{{ card.link_url1 }}">{{ card.link_text1 }}</a>
+                    <span class="fs-card__link-divider">|</span>
+                {% endif %}
+                <a href="{{ card.link_url2 }}">{{ card.link_text2 }}</a>
+                <span class="fs-card__link-divider">|</span>
+                <a href="{{ card.link_url3 }}">{{ card.link_text3 }}</a>
+                <span class="fs-card__link-divider">|</span>
+                <a href="{{ card.link_url4 }}">{{ card.link_text4 }}</a>
+            {% elsif type == 'card_2' %}
+                <a href="{{ card.link_url }}">{{ card.link_text }}</a>
+            {% endif %}
+        </div>
+    </div>
+</div>

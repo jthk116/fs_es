@@ -1,0 +1,32 @@
+.fs-featured-icons {
+    background: #FAFBFB;
+    .container {
+        display: flex;
+        gap: 16px;
+        justify-content: space-between;
+        align-items: center;
+        height: 250px;
+        padding: 16px 170px;
+        @media (max-width: 767px) {
+            flex-direction: column;
+            padding: 16px; 
+            height: 500px;          
+        }
+        .fs-icon__content {
+            text-align: center;
+            img {
+                height: 50px;
+            }
+            p {
+                font-size: 20px;
+                font-family: Helvetica, sans-serif;
+                max-width: 140px;
+                @media (max-width: 767px) {
+                    font-size: 16px;
+                    max-width: 160px;
+                    margin-top: 6px;
+                }
+            }
+        }
+    }
+}

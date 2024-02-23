@@ -1,0 +1,57 @@
+{{ 'fs_featured-icons.css' | asset_url | stylesheet_tag }}
+
+<div class="container">
+    {% for block in section.blocks %}
+        <div class="fs-icon__content">
+            <img src="{{ block.settings.icon_image | img_url: 'small' }}" alt="featured icon">
+            <p>{{ block.settings.icon_text }}</p>
+        </div>
+    {% endfor %}
+</div>
+
+{% schema %}
+{
+    "name": "FS Featured Icons",
+    "class": "fs-featured-icons",
+    "settings": [
+        {
+            "type": "header",
+            "content": "Featured Icons"
+        }
+    ],
+    "blocks": [
+        {
+            "name": "Icon Content",
+            "type": "icon",
+            "settings": [
+                {
+                    "type": "header",
+                    "content": "Icon Content"
+                },
+                {
+                    "type": "image_picker",
+                    "id": "icon_image",
+                    "label": "Image",
+                    "info": "Max Size: 100px width 100px height, Compressed .png"
+                },
+                {
+                    "type": "text",
+                    "id": "icon_text",
+                    "label": "Icon Text"
+                },
+                {
+                    "type": "url",
+                    "id": "icon_url",
+                    "label": "Icon URL"
+                }
+            ],
+            "limit": 3
+        }
+    ],
+    "presets": [
+        { 
+            "name": "FS Featured Icons"
+        }
+    ]
+}
+{% endschema %}

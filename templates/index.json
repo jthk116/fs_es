@@ -1,0 +1,179 @@
+{
+  "sections": {
+    "fs_hero_EYBqkD": {
+      "type": "fs_hero",
+      "blocks": {
+        "link_cRNTwr": {
+          "type": "link",
+          "settings": {
+            "hero_cta_text": "WOMEN",
+            "hero_cta_url": "shopify:\/\/products\/the-collection-snowboard-hydrogen"
+          }
+        },
+        "link_kcqQyn": {
+          "type": "link",
+          "settings": {
+            "hero_cta_text": "MEN",
+            "hero_cta_url": "shopify:\/\/products\/the-collection-snowboard-liquid"
+          }
+        },
+        "link_Kr9iKc": {
+          "type": "link",
+          "settings": {
+            "hero_cta_text": "KIDS",
+            "hero_cta_url": "shopify:\/\/products\/the-collection-snowboard-oxygen"
+          }
+        },
+        "link_6X47XP": {
+          "type": "link",
+          "settings": {
+            "hero_cta_text": "HOME",
+            "hero_cta_url": "shopify:\/\/products\/the-compare-at-price-snowboard"
+          }
+        }
+      },
+      "block_order": [
+        "link_cRNTwr",
+        "link_kcqQyn",
+        "link_Kr9iKc",
+        "link_6X47XP"
+      ],
+      "settings": {
+        "hero_heading": "IN STORES & ONLINE",
+        "hero_title": "50% OFF EVERYTHING",
+        "hero_text_color": "#000000",
+        "hero_image": "shopify:\/\/shop_images\/hero_image_1.jpg"
+      }
+    },
+    "fs_seasonal_z4fTwL": {
+      "type": "fs_seasonal",
+      "settings": {
+        "seasonal_title": "Vacay This Way",
+        "seasonal_subtitle": "Everything you need for your summer get away!",
+        "seasonal_cta_desktop_text": "SHOP SUMMER",
+        "seasonal_cta_mobile_text": "SHOP SUMMER ESSENTIALS",
+        "seasonal_cta_url": "shopify:\/\/collections\/automated-collection",
+        "seasonal_image": "shopify:\/\/shop_images\/image_block_1.jpg"
+      }
+    },
+    "fs_featured_cards_AcHBYd": {
+      "type": "fs_featured-cards",
+      "blocks": {
+        "card_1_A8fLBK": {
+          "type": "card_1",
+          "settings": {
+            "card_title": "NEW ARRIVALS",
+            "card_subtitle": "Our latest Summer styles. Fresh. Fun. Fabulous.",
+            "card_image": "shopify:\/\/shop_images\/new_arrivals.jpg",
+            "link_text1": "WOMEN",
+            "link_url1": "",
+            "link_text2": "MEN",
+            "link_url2": "",
+            "link_text3": "KIDS",
+            "link_url3": "",
+            "link_text4": "HOME",
+            "link_url4": ""
+          }
+        },
+        "card_2_yPDz3t": {
+          "type": "card_2",
+          "settings": {
+            "card_title": "COLLEGE BOUND",
+            "card_subtitle": "New places and new faces. Same great style.",
+            "card_image": "shopify:\/\/shop_images\/college_bound.jpg",
+            "link_text": "SHOP DORM DECOR",
+            "link_url": ""
+          }
+        },
+        "card_1_link_3VkkPR": {
+          "type": "card_1_link",
+          "settings": {
+            "link_text": "",
+            "link_url": ""
+          }
+        },
+        "card_1_link_87AVPa": {
+          "type": "card_1_link",
+          "settings": {
+            "link_text": "",
+            "link_url": ""
+          }
+        },
+        "card_1_link_qAjceU": {
+          "type": "card_1_link",
+          "settings": {
+            "link_text": "",
+            "link_url": ""
+          }
+        },
+        "card_1_link_xBhFnf": {
+          "type": "card_1_link",
+          "settings": {
+            "link_text": "",
+            "link_url": ""
+          }
+        },
+        "card_2_link_pA7yJx": {
+          "type": "card_2_link",
+          "settings": {
+            "link_text": "",
+            "link_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "card_1_A8fLBK",
+        "card_2_yPDz3t",
+        "card_1_link_3VkkPR",
+        "card_1_link_87AVPa",
+        "card_1_link_qAjceU",
+        "card_1_link_xBhFnf",
+        "card_2_link_pA7yJx"
+      ],
+      "settings": {
+      }
+    },
+    "fs_featured_icons_qmc8pF": {
+      "type": "fs_featured-icons",
+      "blocks": {
+        "icon_QcLeFG": {
+          "type": "icon",
+          "settings": {
+            "icon_image": "shopify:\/\/shop_images\/shipping-icon.png",
+            "icon_text": "FREE SHIPPING ON ALL ORDERS",
+            "icon_url": ""
+          }
+        },
+        "icon_hdtmWb": {
+          "type": "icon",
+          "settings": {
+            "icon_image": "shopify:\/\/shop_images\/returns-icon.png",
+            "icon_text": "FREE RETURNS ON ALL ORDERS",
+            "icon_url": ""
+          }
+        },
+        "icon_TFCg7E": {
+          "type": "icon",
+          "settings": {
+            "icon_image": "shopify:\/\/shop_images\/checkout-icon.png",
+            "icon_text": "SAFE & SECURE CHECKOUT",
+            "icon_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "icon_QcLeFG",
+        "icon_hdtmWb",
+        "icon_TFCg7E"
+      ],
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "fs_hero_EYBqkD",
+    "fs_seasonal_z4fTwL",
+    "fs_featured_cards_AcHBYd",
+    "fs_featured_icons_qmc8pF"
+  ]
+}

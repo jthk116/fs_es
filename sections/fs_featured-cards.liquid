@@ -1,0 +1,194 @@
+{{ 'fs_featured-cards.css' | asset_url | stylesheet_tag }}
+
+<div class="container">
+    {% for block in section.blocks %}
+        {% if block.type == 'card_1' or block.type == 'card_2'%}
+            {% render 'fs-card', card: block.settings, type: block.type %}
+        {% endif %}
+    {% endfor %}
+</div>
+
+<script src="{{ 'fs_featured-cards.js' | asset_url }}" defer></script>
+
+{% schema %}
+{
+    "name": "FS Featured Cards",
+    "class": "fs-featured-cards",
+    "blocks": [
+        {
+            "name": "Featured Card 1",
+            "type": "card_1",
+            "settings": [
+                {
+                    "type": "header",
+                    "content": "Content for Card 1"
+                },
+                {
+                    "type": "text",
+                    "id": "card_title",
+                    "label": "Card 1 Title",
+                    "default": "NEW ARRIVALS"
+                },
+                {
+                    "type": "text",
+                    "id": "card_subtitle",
+                    "label": "Card 1 Subtitle",
+                    "default": "Our latest Summer styles. Fresh. Fun. Fabulous."
+                },
+                {
+                    "type": "image_picker",
+                    "id": "card_image",
+                    "label": "Image",
+                    "info": "Size: 650x650px, Compressed .jpg"
+                },
+                {
+                    "type": "text",
+                    "id": "link_text1",
+                    "label": "Card 1 Link Text(1)",
+                    "default": "WOMEN"
+                },
+                {
+                    "type": "url",
+                    "id": "link_url1",
+                    "label": "Card 1 URL(1)"
+                },
+                {
+                    "type": "text",
+                    "id": "link_text2",
+                    "label": "Card 1 Link Text(2)",
+                    "default": "MEN"
+                },
+                {
+                    "type": "url",
+                    "id": "link_url2",
+                    "label": "Card 1 URL(2)"
+                },
+                {
+                    "type": "text",
+                    "id": "link_text3",
+                    "label": "Card 1 Link Text(3)",
+                    "default": "KIDS"
+                },
+                {
+                    "type": "url",
+                    "id": "link_url3",
+                    "label": "Card 1 URL(3)"
+                },
+                {
+                    "type": "text",
+                    "id": "link_text4",
+                    "label": "Card 1 Link Text(4)",
+                    "default": "HOME"
+                },
+                {
+                    "type": "url",
+                    "id": "link_url4",
+                    "label": "Card 1 URL(4)"
+                }
+            ],
+            "limit": 1
+        },
+        {
+            "name": "Card 1 Link",
+            "type": "card_1_link",
+            "settings": [
+                {
+                    "type": "header",
+                    "content": "Link to add to Card 1"
+                },
+                {
+                    "type": "text",
+                    "id": "link_text",
+                    "label": "Card 1 Link Text"
+                },
+                {
+                    "type": "url",
+                    "id": "link_url",
+                    "label": "Card 1 URL"
+                }
+            ],
+            "limit": 4
+        },
+        {
+            "name": "Featured Card 2",
+            "type": "card_2",
+            "settings": [
+                {
+                    "type": "header",
+                    "content": "Content for Card 2"
+                },
+                {
+                    "type": "text",
+                    "id": "card_title",
+                    "label": "Card 2 Title",
+                    "default": "COLLEGE BOUND"
+                },
+                {
+                    "type": "text",
+                    "id": "card_subtitle",
+                    "label": "Card 2 Subtitle",
+                    "default": "New places and new faces. Same great style."
+                },
+                {
+                    "type": "image_picker",
+                    "id": "card_image",
+                    "label": "Image",
+                    "info": "Size: 650x650px, Compressed .jpg"
+                },
+                {
+                    "type": "text",
+                    "id": "link_text",
+                    "label": "Card 2 Link Text",
+                    "default": "SHOP DORM DECOR"
+                },
+                {
+                    "type": "url",
+                    "id": "link_url",
+                    "label": "Card 2 URL"
+                }
+            ],
+            "limit": 1
+        },
+        {
+            "name": "Card 2 Link",
+            "type": "card_2_link",
+            "settings": [
+                {
+                    "type": "header",
+                    "content": "Link to add to Card 2"
+                },
+                {
+                    "type": "text",
+                    "id": "link_text",
+                    "label": "Card 2 Link Text"
+                },
+                {
+                    "type": "url",
+                    "id": "link_url",
+                    "label": "Card 2 URL"
+                }
+            ],
+            "limit": 4
+        }
+    ],
+    "presets": [
+        { 
+            "name": "FS Featured Cards",
+            "blocks": [
+                {
+                    "type": "card_1"
+                },
+                {
+                    "type": "card_2"
+                },
+                {
+                    "type": "card_1_link"
+                },
+                {
+                    "type": "card_2_link"
+                }
+            ]
+        }
+    ]
+}
+{% endschema %}

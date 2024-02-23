@@ -1,0 +1,121 @@
+@font-face {
+    font-family: "Roboto-Black";
+    src: url("{{ 'Roboto-Black.woff2' | asset_url }}") format("[woff2]");
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Roboto-BlackItalic";
+    src: url("path/to/yourfont-blackitalic.woff2") format("woff2");
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Roboto-Bold";
+    src: url("path/to/yourfont-bold.woff2") format("woff2");
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Roboto-BoldItalic";
+    src: url("path/to/yourfont-bolditalic.woff2") format("woff2");
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Roboto-Italic";
+    src: url("path/to/yourfont-italic.woff2") format("woff2");
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Roboto-Light";
+    src: url("path/to/yourfont-light.woff2") format("woff2");
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Roboto-LightItalic";
+    src: url("path/to/yourfont-lightitalic.woff2") format("woff2");
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Roboto-Medium";
+    src: url("path/to/yourfont-medium.woff2") format("woff2");
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Roboto-MediumItalic";
+    src: url("path/to/yourfont-mediumitalic.woff2") format("woff2");
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Roboto-Regular";
+    src: url("path/to/yourfont-regular.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Roboto-Thin";
+    src: url("path/to/yourfont-thin.woff2") format("woff2");
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Roboto-ThinItalic";
+    src: url("path/to/yourfont-thinitalic.woff2") format("woff2");
+    font-weight: 100;
+    font-style: italic;
+}
+
+body {
+    font-family: "Roboto-Regular", sans-serif;
+    color: #4A4A4A;
+}
+
+.container {
+    max-width: 1440px;
+    padding: 16px;
+    margin: 0 auto;
+    @media (max-width: 1043px) {}
+    @media (max-width: 767px) {
+        padding: 8px;
+    }
+}
+
+#WebPixelsManagerSandboxContainer {
+    display: none;
+}
+
+.fs-cta {
+    display: inline-block;
+    height: 50px;
+    line-height: 50px;
+    font-family: Helvetica, sans-serif;
+    font-size: 14px;
+    color: #FFFFFF;
+    background: #141414;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    padding: 0 12px;
+    @media (max-width: 767px) {
+        height: 41px;
+        line-height: 41px;
+        font-size: 12px;
+    }
+}

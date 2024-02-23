@@ -1,0 +1,97 @@
+.fs-hero {
+  height: 650px;
+  position: relative;
+  margin-bottom: 50px;
+}
+@media (max-width: 767px) {
+  .fs-hero {
+    height: 300px;
+    margin-bottom: 250px;
+  }
+}
+.fs-hero .fs-hero__content {
+  margin-top: 8%;
+  margin-left: 7%;
+  max-width: 660px;
+  text-align: center;
+}
+@media (max-width: 989px) {
+  .fs-hero .fs-hero__content {
+    padding: 16px 14px;
+    margin-top: 10%;
+    margin-left: 0;
+    width: 100%;
+  }
+}
+@media (max-width: 767px) {
+  .fs-hero .fs-hero__content {
+    background: #FFFFFF;
+    border: 1px solid #d8d8d8;
+    margin: 200px auto 0;
+  }
+}
+.fs-hero .fs-hero__content h2 {
+  font-family: Helvetica, sans-serif;
+  font-size: 20px;
+  margin-top: 0;
+}
+@media (max-width: 989px) {
+  .fs-hero .fs-hero__content h2 {
+    font-size: 14px;
+  }
+}
+.fs-hero .fs-hero__content h1 {
+  font-family: Helvetica, sans-serif;
+  font-size: 80px;
+  line-height: normal;
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+@media (max-width: 989px) {
+  .fs-hero .fs-hero__content h1 {
+    font-size: 36px;
+  }
+}
+.fs-hero .fs-hero__content .fs-hero__ctas {
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 767px) {
+  .fs-hero .fs-hero__content .fs-hero__ctas {
+    max-width: 314px;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    justify-content: space-around;
+  }
+}
+.fs-hero .fs-hero__content .fs-hero__ctas .fs-hero__cta {
+  display: inline-block;
+  max-width: 150px;
+  width: 100%;
+  display: inline-block;
+  height: 50px;
+  line-height: 50px;
+  font-size: 14px;
+  color: #FFFFFF;
+  background: #141414;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+}
+@media (max-width: 989px) {
+  .fs-hero .fs-hero__content .fs-hero__ctas .fs-hero__cta {
+    margin-bottom: 14px;
+  }
+}
+@media (max-width: 479px) {
+  .fs-hero .fs-hero__content .fs-hero__ctas .fs-hero__cta {
+    max-width: 125px;
+  }
+}
+@media (max-width: 767px) {
+  .fs-hero .fs-hero__content .fs-hero__ctas .fs-hero__cta {
+    height: 41px;
+    line-height: 41px;
+    font-size: 12px;
+  }
+}/*# sourceMappingURL=fs_hero.css.map */
